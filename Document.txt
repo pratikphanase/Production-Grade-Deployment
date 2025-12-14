@@ -83,8 +83,7 @@ eksctl version
 # Creation of Cluster
 eksctl create cluster --name kastro-cluster --region us-east-1 --node-type t2.medium  --zones us-east-1a,us-east-1b
 
-GitHub Token
-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
+
 
 #To delete the cluster
 eksctl delete cluster --name kastro-cluster --region us-east-1
