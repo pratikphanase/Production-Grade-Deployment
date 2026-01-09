@@ -6,13 +6,12 @@ metadata:
 spec:
   replicas: 5
   selector:
-    matchlabels:
+    matchLabels:
       app: movie-app
-  templates:
+  template:
     metadata:
       labels:
         app: movie-app
-
     spec:
       containers:
         - name: movie-app
