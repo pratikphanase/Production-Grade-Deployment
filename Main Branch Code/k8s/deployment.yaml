@@ -6,15 +6,16 @@ metadata:
 spec:
   replicas: 5
   selector:
-    matchLabels:
+    matchlabels:
       app: movie-app
-  template:
+  templates:
     metadata:
       labels:
         app: movie-app
+
     spec:
       containers:
-      - name: movie-app
-        image: kastrov/multibranch-flask-app:build-61
-        ports:
-        - containerPort: 5000
+        - name: movie-app
+          image: pratikphanase97/multibranch-flask-app:latest
+          ports:
+            - containerPort: 5000
